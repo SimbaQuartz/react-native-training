@@ -5,7 +5,10 @@ export default class App extends React.Component {
   render() {
     console.log(a)
     return (
-      <Main />
+      <Main
+        name="Hello World"
+        color="red"
+      />
     )
   }
 }
