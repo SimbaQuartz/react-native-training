@@ -8,7 +8,18 @@ export default class App extends React.Component {
     selected: 0
   }
 
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ selected: 1 })
+    }, 1000)
+  }
+
+  componentDidUpdate() {
+    if (this.state.selected === 1) alert('Component Updated')
+  }
+
   render() {
+    console.log('render called')
     const a = [
       {
         name: 'Radhika'

@@ -5,6 +5,11 @@ import { Dimensions } from 'react-native'
 const { height, width } = Dimensions.get('window')
 
 export default class Main extends React.Component {
+
+    // componentWillMount() {
+    //     alert('Main mounted')
+    // }
+
     state = {
         text: 1
     }
