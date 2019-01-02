@@ -6,16 +6,18 @@ const { height, width } = Dimensions.get('window')
 
 export default class Main extends React.Component {
 
-    // componentWillMount() {
-    //     alert('Main mounted')
-    // }
-
     state = {
         text: 1
     }
+
+    componentWillUnmount() {
+        alert('Main unmounted')
+    }
+
     render() {
         return (
-            <Text style={{ color: this.props.color, margin: 100, fontSize: 30 }}>{this.props.name}</Text>
+            <Text style={{ color: this.props.color, margin: 100, fontSize: 30 }}>{this.props.name}
+            </Text>
         )
     }
 }
