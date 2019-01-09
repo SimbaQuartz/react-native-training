@@ -4,20 +4,17 @@ import { Dimensions } from 'react-native'
 
 const { height, width } = Dimensions.get('window')
 
-export default class Main extends React.Component {
+export default class HomeScreen extends React.Component {
 
     state = {
         text: 1
     }
 
-    componentWillUnmount() {
-        // return alert('Main unmounted')
-    }
-
     render() {
         return (
-            <Text style={{ color: this.props.color, margin: 100, fontSize: 30 }}>{this.props.name}
-            </Text>
+            <TouchableOpacity style={{ height, width, justifyContent: 'center', alignItems: 'center' }}>
+                <Text>Go To Profile Screen</Text>
+            </TouchableOpacity>
         )
     }
 }
