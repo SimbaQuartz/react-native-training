@@ -6,9 +6,9 @@ import { Router, Stack, Scene } from 'react-native-router-flux'
 
 const Routes = () => (
     <Router>
-        <Stack key="root">
-            <Scene key="profile" component={ProfileScreen} title="profile" />
-            <Scene key="home" component={HomeScreen} title="home" />
+        <Stack key="root" hideNavBar>
+            <Scene key="profile" component={ProfileScreen} />
+            <Scene key="home" component={HomeScreen} initial />
         </Stack>
     </Router>
 )
